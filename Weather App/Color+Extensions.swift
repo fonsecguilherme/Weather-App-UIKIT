@@ -14,6 +14,6 @@ extension UIColor {
     
     static let primaryColor = UIColor(named: "primaryColor")
     
-    static let lightGray = UIColor(named: "softgray")
+    static let lightGray = UIColor(named: "softGray")
     
 }
