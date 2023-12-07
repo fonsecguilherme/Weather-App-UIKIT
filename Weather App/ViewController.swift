@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 20)
         label.text = "São Paulo"
         label.textAlignment = .center
-        label.textColor = UIColor(named: "primaryColor")
+        label.textColor = UIColor.primaryColor
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 70, weight: .bold)
         label.text = "25°C"
         label.textAlignment = .left
-        label.textColor = UIColor(named: "primaryColor")
+        label.textColor = UIColor.primaryColor
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -64,7 +64,7 @@ class ViewController: UIViewController {
         let label = UILabel(frame: .zero)
         label.text = "Umidade"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
-        label.textColor = UIColor(named: "constrastColor")
+        label.textColor = UIColor.contrastColor
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -73,7 +73,7 @@ class ViewController: UIViewController {
         let label = UILabel(frame: .zero)
         label.text = "1000mm"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
-        label.textColor = UIColor(named: "constrastColor")
+        label.textColor = UIColor.contrastColor
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -89,7 +89,7 @@ class ViewController: UIViewController {
         let label = UILabel(frame: .zero)
         label.text = "Vento"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
-        label.textColor = UIColor(named: "constrastColor")
+        label.textColor = UIColor.contrastColor
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -98,7 +98,7 @@ class ViewController: UIViewController {
         let label = UILabel(frame: .zero)
         label.text = "10km/h"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
-        label.textColor = UIColor(named: "constrastColor")
+        label.textColor = UIColor.contrastColor
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -114,7 +114,7 @@ class ViewController: UIViewController {
         let stackview = UIStackView(arrangedSubviews: [humidityStackView, windStackView])
         stackview.axis = .vertical
         stackview.spacing = 3
-        stackview.backgroundColor = UIColor(named:  "softGray")
+        stackview.backgroundColor = UIColor.lightGray
         stackview.layer.cornerRadius = 10
         stackview.isLayoutMarginsRelativeArrangement = true
         stackview.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 12, leading: 24, bottom: 12, trailing: 24)
@@ -126,7 +126,7 @@ class ViewController: UIViewController {
         let label = UILabel()
         label.text = "PREVISÃO POR HORA"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
-        label.textColor = UIColor(named: "constrastColor")
+        label.textColor = UIColor.contrastColor
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -139,7 +139,7 @@ class ViewController: UIViewController {
         layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         
         let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collection.backgroundColor = .red
+        collection.backgroundColor = .clear
         collection.dataSource = self
         
         //registrando a nossa célula na collectionView
